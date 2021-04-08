@@ -3,10 +3,9 @@ function primeList(number, res = []) {
         return res;
     
     if(isPrime(number))
-        res.push(number)
-
-    return primeList(--number, res)
-    
+        return primeList(number - 1, [...res, number])
+    else
+        return primeList(--number, res)
 }
 
 function isPrime(number, teiler = number > 10 ? 10 : number - 1) {
