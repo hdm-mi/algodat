@@ -34,7 +34,7 @@ function isExact(text, search, pos = 0) {
 }
 
 /**
- * Get's the substring from a start position witht the given length
+ * Get's the substring from a start position with the given length
  * @param {string} text string
  * @param {int} length lenght of substring
  * @param {int} start startposition of substring
